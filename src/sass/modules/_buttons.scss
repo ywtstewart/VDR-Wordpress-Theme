@@ -1,0 +1,60 @@
+//Common
+//-------------------------------------------------------
+
+.button-wrapper {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.btn, button {
+  min-width: 150px;
+  margin: 5px;
+  border: none;
+  background-image: none;
+  padding: 6px 12px;
+
+  &--primary {
+    color: #fff;
+    background-color: #335FB6;
+    border-color: #ccc;
+
+    &:hover, &:active{
+      color: #fff;
+       background-color: darken(#335FB6, 25%);
+    }
+
+  }
+
+  &--secondary{
+    color: #335FB6;
+    background-color: #fff;
+
+    &:hover, &:active{
+      //color: #fff;
+      background-color: darken(#fff, 12.5%);
+    }
+  }
+
+  &--important {
+    color: #335FB6;
+    font-weight: bold;
+    background-color: #fff;
+    border: #ccc;
+  }
+
+  &--bottom {
+  }
+
+  &__read-more {
+    margin: 0 auto;
+  }
+}
+
+a, .alink, .link{
+  color: $base__link-color;
+
+  &:hover{
+    color: $base__link-color--hover;
+  }
+}

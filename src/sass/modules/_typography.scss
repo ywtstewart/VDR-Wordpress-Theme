@@ -1,0 +1,60 @@
+//Common
+//-------------------------------------------------------
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $base__font-family;
+  font-weight: $base__font-weight;
+  color: $base__font-color;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+
+}
+
+
+//Till Mobile
+//-------------------------------------------------------
+@media (max-width: $screen__s){
+
+}
+
+//Till Tablet
+//-------------------------------------------------------
+@media (max-width: $screen__m){
+
+}
+//Desktop
+//-------------------------------------------------------
+@media (max-width: $screen__l){
+
+}
+//Desktop XL
+//-------------------------------------------------------
+@media (max-width: $screen__xl){
+
+}

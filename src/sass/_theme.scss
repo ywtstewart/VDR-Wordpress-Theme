@@ -1,0 +1,24 @@
+//Global Variables
+
+//Colors
+$color__1: #335FB6;
+$color__2: #fff;
+$color__3: #333;
+$color__4: #000;
+
+$bg-color__1: #fff;
+$bg-color__2: #000;
+$bg-color__3: #f1f1f1;
+
+//Typography
+$base__font-family: "Gill Sans", "Helvetica Neue", Helvetica, sans-serif;
+$base__font-color: $color__3;
+$base__font-size: 14px;
+$base__line-height: 20px;
+$base__font-weight: normal;
+
+//Links
+$base__link-color: $color__3;
+$base__link-color--hover: lighten($color__3 , 12.5%);
+
+//Buttons
