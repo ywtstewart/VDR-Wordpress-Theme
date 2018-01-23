@@ -36,7 +36,7 @@
             <p><?php echo get_theme_mod( 'over_text' ); ?></p>
 
             <a href="<?php echo get_theme_mod( 'over_btn_url', '#contact' ); ?>">
-                <button class="btn btn--primary"><?php echo get_theme_mod( 'over_btn_text', 'Contact' ); ?></button>
+                <button class="btn btn__primary"><?php echo get_theme_mod( 'over_btn_text', 'Contact' ); ?></button>
             </a>
         </div>
     </div>
@@ -159,7 +159,7 @@
                                     </div>
                                     <div class="card__link">
                                         <a href="<?php the_permalink(); ?>"
-                                           class="btn btn--primary"><?php echo get_theme_mod( 'read_more', 'Lees meer' ); ?></a>
+                                           class="btn btn__primary"><?php echo get_theme_mod( 'read_more', 'Lees meer' ); ?></a>
                                     </div>
                                 </div>
                             </article>

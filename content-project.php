@@ -10,7 +10,7 @@
 				<?php else: ?>
                 <div class="blog-post__title--archive col-xs-12 col-sm-8">
 					<?php endif; ?>
-                    <h2>
+                    <h1>
 						<?php if ( is_single() ) : ?>
 							<?php the_title(); ?>
 						<?php else: ?>
@@ -18,7 +18,7 @@
 								<?php the_title(); ?>
                             </a>
 						<?php endif; ?>
-                    </h2>
+                    </h1>
                 </div>
 
 				<?php if ( is_single() ) : ?>

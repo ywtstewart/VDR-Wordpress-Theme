@@ -9,8 +9,8 @@
 				<div class="modal-txt"></div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn--primary" data-dismiss="modal"><?php echo get_theme_mod( 'modal-btn-text', 'Sluiten' ); ?></button>
-                <a type="button" class="btn btn--primary btn__more btn--hide" href=""> <?php echo get_theme_mod( 'modal-btn-2-text', 'Lees Meer' ); ?> </a>
+				<button type="button" class="btn btn__primary" data-dismiss="modal"><?php echo get_theme_mod( 'modal-btn-text', 'Sluiten' ); ?></button>
+                <a type="button" class="btn btn__primary btn__more btn--hide" href=""> <?php echo get_theme_mod( 'modal-btn-2-text', 'Lees Meer' ); ?> </a>
 			</div>
 		</div>
 	</div>

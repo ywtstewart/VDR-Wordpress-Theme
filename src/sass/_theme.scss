@@ -20,6 +20,17 @@ $base__font-weight: normal;
 
 //Links
 $base__link-color: $color__3;
-$base__link-color--hover: lighten($color__3 , 12.5%);
+$base__link-color--hover: $color__3;
 
 //Buttons
+$btn-primary__color: $color__2;
+$btn-primary__bg-color: $color__1;
+$btn-primary__color--hover: $color__2;
+$btn-primary__bg-color--hover: darken ($color__1 , 25%);
+$btn-primary__bg-color--active: darken ($color__1 , 25%);
+
+$btn-secondary__color: $color__3;
+$btn-secondary__bg-color: $color__2;
+$btn-secondary__color--hover: $color__3;
+$btn-secondary__bg-color--hover: darken($color__3, 12.5%);
+$btn-secondary__bg-color--active: darken($color__3, 12.5%);
