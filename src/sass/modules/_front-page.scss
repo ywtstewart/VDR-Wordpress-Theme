@@ -1,24 +1,397 @@
 //Common
 //-------------------------------------------------------
+.section {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+
+  &:nth-child(odd) {
+    background: #f1f1f1;
+    color: #333;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    text-align: center;
+
+    span {
+      font-size: 0.9em;
+      color: #404040;
+      font-style: italic;
+      /*font-weight: bold;*/
+    }
+  }
+
+  &__subtext {
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+
+  &__content {
+    display: block;
+    position: relative;
+    /*margin: 10px auto;*/
+  }
+}
+
+.content-box {
+  display: block;
+  position: relative;
+
+  vertical-align: middle;
+  padding: 0 20px;
+
+  &--left {
+  }
+
+  &--right {
+
+  }
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.img-wrapper {
+  display: block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.hero {
+  width: 100%;
+  height: 475px;
+  display: block;
+  position: relative;
+  /*background: #3f3f3f;*/
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include overlay();
+  img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 300px;
+  }
+
+  &__inner {
+    z-index: 1;
+  }
+
+  &-content {
+    display: block;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    z-index: 2;
+    -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+    -webkit-flex: 1; /* Safari 6.1+. iOS 7.1+, BB10 */
+    -ms-flex: 1; /* IE 10 */
+    flex: 1; /* NEW, Spec - Firefox, Chrome, Opera */
+
+    h1 {
+      margin: 10px;
+      color: #ffffff;
+    }
+
+    &__img {
+      margin-bottom: 10px;
+    }
+
+  }
+
+}
+
+#over-ons, #uitgelicht, #diensten, #vacatures, #partners, #contact {
+  padding: 40px 0px;
+}
+
+#over-ons {
+  .img-wrapper {
+    img {
+      display: block;
+    }
+  }
+}
+
+#uitgelicht {
+}
+
+#diensten {
+}
+
+#diensten {
+}
+
+#vacatures, #contact {
+  /*   padding: 100px 0;*/
+}
+
+#vacatures {
+  text-align: center;
+}
+
+.jobs-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#vacatures p, #contact p {
+}
+
+#contact {
+  padding: 40px 0;
+}
+
+.projects {
+  margin-top: 30px;
+  list-style: none;
+  &__item {
+    display: inline-block;
+    margin-bottom: 30px;
+
+  }
+}
+
+.card {
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0 0 12px 0 $bg-color__4;
+  overflow: hidden;
+
+  &__container {
+    background: $color__2;
+    overflow: hidden;
+
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    border-bottom: 5px solid $color__1;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 600;
+    padding-top: 5px;
+  }
+
+  &__description {
+    display: block;
+    text-align: left;
+    padding: 10px 20px 0;
+    height: 100px;
+  }
+
+  &__link {
+    margin: 10px 0;
+    //border-top: lightgrey solid 1px ;
+    //padding-top: 20px;
+  }
+}
+
+.boxses {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.box {
+  display: block;
+  flex: 1;
+  color: #333;
+  overflow: hidden;
+  text-align: center;
+  padding: 0px;
+  margin: 10px;
+  background: transparent;
+
+  position: relative;
+
+  img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__text, &__img, &__button {
+    display: block;
+    position: relative;
+  }
+
+  &__link {
+
+    &:hover {
+      .box__img {
+        border: 5px solid $color__1;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+    box-shadow: 0 0 12px 0px #a8a8a8;
+    border: 5px solid transparent;
+
+    &::after, &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::after {
+      background: #000000;
+      opacity: 0.45;
+    }
+
+    &:hover &::after {
+      opacity: 0.7;
+    }
+
+  }
+
+  &__image-title {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 26px;
+    color: $color__2;
+    padding: 0 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    padding: 10px 10px 0;
+    min-height: 12vh;
+
+    p {
+      padding: 0 10px;
+    }
+  }
+
+  &__button {
+    display: block;
+    padding: 20px;
+    position: relative;
+  }
+}
+
+.vacatures {
+  list-style: none;
+  text-align: center;
+  margin: 20px auto 0;
+  max-width: 600px;
+}
+
+.list-group {
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+
+  .list-group-item {
+    border: 0px;
+    float: left;
+    padding: 0 15px;
+    margin: 0;
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+
+      & span {
+        color: #335FB6;
+        font-weight: bold;
+        padding: 10px 15px;
+        background: #eeeeee;
+        min-width: 110px;
+        display: block;
+        margin: 0;
+      }
+    }
+
+    &:hover a span {
+      font-weight: bold;
+      background: #335FB6;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.brands {
+
+}
+
+.brand {
+  &__img {
+    display: inline-block;
+    width: 175px;
+    height: auto;
+    margin: 20px;
+  }
+}
+
 
 //Till Mobile
 //-------------------------------------------------------
-@media (max-width: $screen__s){
+@media (max-width: $screen__s) {
 
 }
 
 //Till Tablet
 //-------------------------------------------------------
-@media (max-width: $screen__m){
+@media (max-width: $screen__m) {
 
 }
+
 //Desktop
 //-------------------------------------------------------
-@media (max-width: $screen__l){
+@media (max-width: $screen__l) {
 
 }
+
 //Desktop XL
 //-------------------------------------------------------
-@media (max-width: $screen__xl){
+@media (max-width: $screen__xl) {
 
 }
+
