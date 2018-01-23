@@ -15,6 +15,14 @@
     background: #335FB6;
     background-size: cover;
     background-position: center center;
+    text-align: center;
+
+    &__text{
+      font-size: 30px;
+      line-height: 34px;
+      color: $color__2;
+      z-index: 1;
+    }
   }
 
   &-img h2 {
@@ -43,6 +51,9 @@
 
   &-footer {
     text-align: center;
+    & .btn+.btn {
+      margin-bottom: 5px;
+    }
   }
 
   &-thumbnail {

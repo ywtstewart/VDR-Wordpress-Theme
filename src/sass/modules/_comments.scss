@@ -40,7 +40,7 @@
     }
   }
 
-  .comment-reply-link {
+  &-reply-link {
     background: #fff;
     color: #333;
     display: inline-block;
@@ -48,7 +48,7 @@
     border: #ccc solid 1px;
   }
 
-  .comment-form {
+  &-form {
     input, textarea {
       width: 100%;
       padding: 4px;

@@ -8,14 +8,12 @@
 </div>
 
 <div class="col-xs-12">
-    <div class="blog-archive-header col-xs-12">
+    <div class="archive__header col-xs-12">
         <h1>
-			<?php $object = get_post_type_object( 'project' )->labels;
-
-			echo $object->name;?>
+			<?php $object = get_post_type_object( 'project' )->labels; echo $object->name;?>
         </h1>
     </div>
-	<div class="col-sm-12 blog-main">
+	<div class="archive__main col-sm-12 ">
 
 		<?php get_header(); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

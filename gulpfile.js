@@ -33,6 +33,7 @@ gulp.task('browser-sync', function () {
 
     var files = [
         "./build/css/style.css",
+        "./build/js/*.js",
         "./*.php",
         "./inc/*.php",
         "./js/*.js"

@@ -1,29 +1,30 @@
 <?php get_header(); ?>
-
-<!-- <div class="blog-header">
-    <h1 class="blog-title">
-        <?php bloginfo('name');?>
-    </h1>
-    <p class="lead blog-description">
-        <?php bloginfo('description');?>
-    </p>
-</div> -->
-
+<?php if ( has_post_thumbnail() && is_single() ) : ?>
+    <div class="blog-header" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+        <div class="blog-header__img" ></div>
+    </div>
+<?php endif; ?>
 <div class="row">
 
     <div class="col-sm-12 blog-main">
+		<?php if (is_single()) : ?>
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part('content', get_post_format()); ?>
-        <?php endwhile; ?>
-        <?php else : ?>
-        <p>
-            <?php __('No Posts Found')?>
-        </p>
-        <?php endif; ?>
+		<?php else : ?>
+        <div class="blog-posts">
+			<?php endif; ?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'content', 'project' ); ?>
+			<?php endwhile; ?>
+			<?php else : ?>
+                <p>
+					<?php __( 'No Projects Found' ) ?>
+                </p>
+			<?php endif; ?>
+			<?php if (is_single()) : ?>
+			<?php else : ?>
+        </div>
+	<?php endif; ?>
     </div>
     <!-- /.blog-main -->
+	<?php get_footer(); ?>
 
-
-
-    <?php get_footer(); ?>

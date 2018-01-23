@@ -6,45 +6,45 @@
   bottom: 0;
   left: 0;
   padding: 1rem;
-    color: #fff;
-    text-align: center;
-    background-color: #000;
-    border-top: 1px solid #e5e5e5;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-top: 1px solid #e5e5e5;
 
-  p {
-    margin: 0;
-    padding: 0;
-  }
+}
 
-  a {
-    color: #fff;
-    text-decoration: underline;
+.footer-nav {
+  &__item {
+    display: inline-block;
 
-    &:hover {
-      color: #e3e3e3;
-      text-decoration: underline;
+    &:not(:last-child)::after {
+      content: '|';
+      padding-left: 10px;
+      margin-right: 10px;
     }
   }
 }
 
 //Till Mobile
 //-------------------------------------------------------
-@media (max-width: $screen__s){
+@media (max-width: $screen__s) {
 
 }
 
 //Till Tablet
 //-------------------------------------------------------
-@media (max-width: $screen__m){
+@media (max-width: $screen__m) {
 
 }
+
 //Desktop
 //-------------------------------------------------------
-@media (max-width: $screen__l){
+@media (max-width: $screen__l) {
 
 }
+
 //Desktop XL
 //-------------------------------------------------------
-@media (max-width: $screen__xl){
+@media (max-width: $screen__xl) {
 
 }
