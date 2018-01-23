@@ -28,7 +28,15 @@
 //Till Mobile
 //-------------------------------------------------------
 @media (max-width: $screen__s) {
-
+  .footer{
+    position: relative;
+  }
+ .footer-nav{
+   &__item{
+     display: block;
+     margin-bottom: 10px;
+   }
+ }
 }
 
 //Till Tablet

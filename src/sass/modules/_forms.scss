@@ -1,6 +1,14 @@
 //Common
 //-------------------------------------------------------
 
+.contact-form {
+  display: block;
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 10px 0;
+
+}
+
 //Till Mobile
 //-------------------------------------------------------
 @media (max-width: $screen__s){

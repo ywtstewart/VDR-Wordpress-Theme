@@ -34,3 +34,19 @@ $btn-secondary__bg-color: $color__2;
 $btn-secondary__color--hover: $color__3;
 $btn-secondary__bg-color--hover: darken($color__3, 12.5%);
 $btn-secondary__bg-color--active: darken($color__3, 12.5%);
+
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $base__font-family;
+  color: $base__font-color;
+  font-size: $base__font-size;
+  line-height: $base__line-height;
+  position: relative;
+  margin: 0;
+  padding-bottom: 3rem;
+  min-height: 100%;
+}

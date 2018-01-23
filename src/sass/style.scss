@@ -2,17 +2,18 @@
 @import "components/reset";
 @import "components/mixins";
 @import "components/responsive";
+@import "components/layout";
 @import "theme";
 
-//All styls
-@import "modules/all-styles";
 
 //Modules
 @import "modules/typography";
 @import "modules/buttons";
 @import "modules/navigation";
 @import "modules/modal";
+@import "modules/forms";
 @import "modules/404";
+@import "modules/animation";
 @import "modules/header";
 @import "modules/footer";
 @import "modules/homepage";

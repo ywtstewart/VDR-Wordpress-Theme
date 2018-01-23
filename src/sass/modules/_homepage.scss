@@ -192,8 +192,10 @@
   }
 
   &__description {
+    display: block;
     text-align: left;
     padding: 10px 20px 0;
+    height: 100px;
   }
 
   &__link {
