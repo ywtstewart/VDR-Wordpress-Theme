@@ -152,7 +152,7 @@
                         <li class="projects__item col-xs-12 col-sm-4" data-aos="fade-up">
                             <article class="card">
                                 <div class="card__container">
-                                    <div class="card__image">
+                                    <div class="card__image <?= class_exists('Dynamic_Featured_Image') && $dynamic_featured_image->get_featured_images( )  ? 'card__image--slider' : ''?>">
                                         <img src="<?php the_post_thumbnail_url() ?>" class="c-card__image" alt="Card Image"/>
 
 

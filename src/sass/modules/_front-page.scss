@@ -185,7 +185,9 @@
 
   &__image {
     position: relative;
-    height: 196px;
+    height:196px;
+    overflow: hidden;
+
 
     & img {
       width: 100%;
@@ -193,10 +195,13 @@
       vertical-align: middle;
     }
 
+    &--slider{
+
     & img {
       top: 0;
       left: 0;
       position: absolute;
+      height: auto;
       animation: showMe 4s linear infinite 0s forwards;
       animation-play-state: paused;
     }
@@ -224,10 +229,11 @@
       animation-play-state: running;
     }
   }
+  }
 
   &__title {
     font-weight: 600;
-    padding: 5px 20px 0;
+    padding: 20px 20px 0;
     border-top: 5px solid $color__1;
     z-index: 101;
   }
@@ -238,7 +244,7 @@
     padding: 10px 20px 0;
     height: 10vh;
     z-index: 101;
-    
+
   }
 
   &__link {
