@@ -153,8 +153,18 @@
                             <article class="card">
                                 <div class="card__container">
                                     <div class="card__image">
-                                        <img src="<?php the_post_thumbnail_url() ?>" class="c-card__image"
-                                             alt="Card Image"/>
+                                        <img src="<?php the_post_thumbnail_url() ?>" class="c-card__image" alt="Card Image"/>
+
+
+   <?php if( class_exists('Dynamic_Featured_Image') ) {
+       global $dynamic_featured_image;
+       $featured_images = $dynamic_featured_image->get_featured_images( );
+       foreach( $featured_images as $img) {
+        echo '<img src="' . $img['full'] . '" class="c-card__image" alt="Card Image"/>';
+       }
+      }
+?>
+
                                     </div>
                                     <div class="card__title">
                                         <h5><?php the_title() ?></h5>
