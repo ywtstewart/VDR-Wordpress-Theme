@@ -8,13 +8,18 @@
                 <img src="<?php echo get_theme_mod( 'hero_main_img', get_bloginfo( 'template_directory' ) . '/img/vdr-logo-full.png' ) ?>"
                      alt=" <?php bloginfo( 'name' ); ?>">
             </div>
+          <div class="hero-content__text ">
             <p><?php echo get_theme_mod( 'hero_text', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsam dolorem et ullam eos quidem voluptate deleniti dignissimos iure reprehenderit perferendis neque ratione alias eum totam, ab nostrum sequi eligendi.' ); ?></p>
+
+          </div>
+          <div class="hero-content__buttons">
             <a href="<?php echo get_theme_mod( 'hero_btn_1_url', '#over-ons' ); ?>"
                class="btn btn--secondary btn--important"><?php echo get_theme_mod( 'hero_btn_1_text', 'Over Ons' ) ?>
             </a>
             <a href="<?php echo get_theme_mod( 'hero_btn_2_url', '#contact' ); ?>"
                class="btn btn--secondary btn--important"><?php echo get_theme_mod( 'hero_btn_2_text', 'Contact' ) ?>
             </a>
+          </div>
         </div>
     </div>
 </div>
@@ -158,8 +163,8 @@
 										<?php the_excerpt() ?>
                                     </div>
                                     <div class="card__link">
-                                        <a href="<?php the_permalink(); ?>"
-                                           class="btn btn__primary"><?php echo get_theme_mod( 'read_more', 'Lees meer' ); ?></a>
+                                        <!-- <a href="<?php the_permalink(); ?>"
+                                           class="btn btn__primary"><?php echo get_theme_mod( 'read_more', 'Lees meer' ); ?></a> -->
                                     </div>
                                 </div>
                             </article>
