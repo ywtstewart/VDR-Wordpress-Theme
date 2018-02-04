@@ -134,7 +134,7 @@
 </section>
 <?php endif; ?>
 
-<? if(post_type_exists('project')) : ?>
+<? if(post_type_exists('project') && 1 === 2) : ?>
 <!-- Projecten -->
 <section id="projecten" class="section">
     <div class="container">
@@ -145,15 +145,15 @@
             <p><?php esc_html( _e( get_theme_mod( 'projects_text', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula pretium nisi, sed pulvinar nunc mattis ac. Etiam at suscipit eros. Quisque vitae efficitur leo. Mauris dignissim lorem eu velit consequat malesuada.' ) ) ); ?> </p>
         </div>
         <div class="section__content">
-            <ul class="projects row">
+            <ul class="projects row row-eq-height">
 				<?php $new_query = new WP_Query( 'post_type=project&posts_per_page=-1' );
 				if ( $new_query->have_posts() ) :?>
 					<?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
                         <li class="projects__item col-xs-12 col-sm-4" data-aos="fade-up">
                             <article class="card">
                                 <div class="card__container">
-                                    <div class="card__image <?= class_exists('Dynamic_Featured_Image') && $dynamic_featured_image->get_featured_images( )  ? 'card__image--slider' : ''?>">
-                                        <img src="<?php the_post_thumbnail_url() ?>" class="c-card__image" alt="Card Image"/>
+                                    <div class="card__image card-image-slider <?= class_exists('Dynamic_Featured_Image') && $dynamic_featured_image->get_featured_images( )  ? 'card__image--slider' : ''?>">
+                                    <img src="<?php the_post_thumbnail_url() ?>" class="c-card__image" alt="Card Image"/>
 
 
    <?php if( class_exists('Dynamic_Featured_Image') ) {
@@ -164,7 +164,6 @@
        }
       }
 ?>
-
                                     </div>
                                     <div class="card__title">
                                         <h5><?php the_title() ?></h5>
